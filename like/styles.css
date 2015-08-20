@@ -1,0 +1,76 @@
+.rate * {
+	margin:0;
+	padding:0;
+}
+.rate {
+	position:relative;
+	float:left;
+}
+.rate:after {
+	display:block;
+	content:'';
+	clear:both;
+}
+.rate .rate-state {
+	position:absolute;
+	height:100%;
+	background:url(star_active.png);
+	background-repeat:repeat;
+	background-size:19px;
+	top:0;
+	left:0;
+}
+.rate a {
+	display:block;
+	width:19px;
+	height:19px;
+	background:url(star.png);
+	float:left;
+}
+.rate:hover .rate-state {
+	display:none;
+}
+.rate:hover a {
+	background:url(star_active.png);
+}
+.rate a:hover ~ a {
+	background:url(star.png);
+}
+
+button {
+	font-family: Verdana;
+	font-size: 11px;
+	color: #000;
+	text-shadow: 0 1px rgba(255,255,255,.75);
+	-webkit-border-radius: 6px;
+	-moz-border-radius: 6px;
+	border-radius: 6px;
+	background-color: #f00;
+	border: solid 1px #c8c8c8;
+	background-image: -webkit-linear-gradient(bottom, #e2e2e2 30%, #f2f2f2 70%);
+	background-image: -moz-linear-gradient(bottom, #e2e2e2 30%, #f2f2f2 70%);
+	background-image: -o-linear-gradient(bottom, #e2e2e2 30%, #f2f2f2 70%);
+	background-image: -ms-linear-gradient(bottom, #e2e2e2 30%, #f2f2f2 70%);
+	background-image: linear-gradient(to top, #e2e2e2 30%, #f2f2f2 70%);
+	outline:none;
+	padding:3px 16px;
+}
+button:focus {
+	box-shadow:rgba(0,35,214,.94) 0 0 2px;
+}
+button:hover {
+	background-image: -webkit-linear-gradient(bottom, #feffeb 30%, #fdffcc 70%);
+	background-image: -moz-linear-gradient(bottom, #feffeb 30%, #fdffcc 70%);
+	background-image: -o-linear-gradient(bottom, #feffeb 30%, #fdffcc 70%);
+	background-image: -ms-linear-gradient(bottom, #feffeb 30%, #fdffcc 70%);
+	background-image: linear-gradient(to top, #feffeb 30%, #fdffcc 70%);
+}
+button:active {
+	box-shadow:inset #c8c8c8 0 2px 2px;
+	padding:4px 16px 2px;
+	background-image: -webkit-linear-gradient(bottom, #e2e2e2 30%, #f2f2f2 70%);
+	background-image: -moz-linear-gradient(bottom, #e2e2e2 30%, #f2f2f2 70%);
+	background-image: -o-linear-gradient(bottom, #e2e2e2 30%, #f2f2f2 70%);
+	background-image: -ms-linear-gradient(bottom, #e2e2e2 30%, #f2f2f2 70%);
+	background-image: linear-gradient(to top, #e2e2e2 30%, #f2f2f2 70%);
+}
